@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Wiki Moderna</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Wiki Moderna</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+    <nav id="main-nav" aria-label="Navegação principal">
+      <ul class="nav-list">
+        <li><a href="#"><span>🏠</span> Início</a></li>
+        <li><a href="#"><span>📄</span> Artigos</a></li>
+        <li><a href="#"><span>📂</span> Categorias</a></li>
+        <li><a href="#"><span>ℹ️</span> Sobre</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-box">
+      <input type="text" placeholder="Buscar artigo...">
+      <button>🔍</button>
+    </div>
+
+    <button onclick="toggleDarkMode()">🌙 Modo Escuro</button>
+  </header>
+
+  <main>
+    <article>
+      
+      <h2>Vida no Interior </h2>
+      <p>A vida no interior, muitas vezes, evoca imagens de tranquilidade, contato com a natureza e comunidades mais próximas. As cidades pequenas e médias oferecem um ritmo de vida mais calmo, menos trânsito e menor custo de vida em comparação com as grandes metrópoles. A segurança também costuma ser um ponto forte, com índices de criminalidade mais baixos, permitindo uma sensação maior de bem-estar. </p>
+
+      <figure>
+        <img src="./assets/download (2).jpg">
+        <figcaption>Casa de roça.</figcaption>
+      </figure>
+
+      <div class="galeria">
+        <img src="./assets/8794c915-2444-4eb7-8892-f42a8d6e2f89.jpg" alt=" 1">
+        <img src="./assets/e1f7e6e4-890d-4817-abff-62d6f3fcc6e1.jpg" alt=" 2">
+        <img src="./assets/sobre lindas passagens.jpg" alt="3">
+      </div>
+    </article>
+
+    <aside>
+      <h3>Índice</h3>
+      <ul>
+        <li><a href="#">Casas 1</a></li>
+        <li><a href="#">Natureza 2</a></li>
+        <li><a href="#">Vida no interior 3</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2025 Wiki Moderna. Criado por Aksa.</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+    function toggleMenu() {
+      const navList = document.querySelector('#main-nav ul');
+      navList.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
